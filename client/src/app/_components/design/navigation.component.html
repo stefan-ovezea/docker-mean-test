@@ -1,0 +1,12 @@
+<div id="myTopnav" class="topnav">
+  <a [routerLink]="['/']"><b>Docker Mean Test</b></a>
+  <a style="float: right" [routerLink]="['/login']">Logout</a>
+  <a style="float: right" [routerLink]="['/profile']"> {{currentUser.firstName}} - {{currentUser.role}} </a>  
+</div>
+<div>
+    <div id="mySidenav" class="sidenav">
+      <a [routerLink]="['/']">Home</a>
+      <a [routerLink]="['/users']">Users</a>
+      <br>
+    </div>  
+</div>

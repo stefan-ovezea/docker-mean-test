@@ -1,0 +1,6 @@
+﻿{
+    "connectionString": "mongodb://database/testdb",
+    "apiUrl": "http://localhost:4000",
+    "secret": "VERYBIGSECRET",
+    "wsUrl": "ws://localhost:3000"
+}

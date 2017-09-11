@@ -1,0 +1,30 @@
+<navbar></navbar>
+  <div id="main">    
+  <div class="container">
+    <h2>Users</h2>  
+    <div class="table-responsive">          
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Username</th>
+          <th>Role</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; let i = index">
+          <td>{{i + 1}}</td>
+          <td>{{user.firstName}}</td>
+          <td>{{user.lastName}}</td>
+          <td>{{user.username}}</td>
+          <td>{{user.role}}</td>
+          <td><a (click)="deleteUser(user._id)">Delete</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
